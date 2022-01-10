@@ -1,2 +1,2 @@
 # rockPaperScissors
-My first JavaScript app, a browser based game of Rock, Paper, Scissors
+My first JavaScript app, a console based game of Rock, Paper, Scissors
