@@ -3,13 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <script src="./index.js" defer></script>
     <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
   </head>
+
   <body>
-    <script>
-      console.log("hi");
-    </script>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="main">
+      <div class="completed">
+        <h2>First to 5</h2>
+        <!-- <h3>Previous games</h3> -->
+        <p>It's rock, paper, scissors and we all know the rules:</p>
+        <ul class="rules">
+          <li>✊ beats ✌</li>
+          <li>✌ beats ✋</li>
+          <li>✋ beats ✊</li>
+        </ul>
+        <!-- <ul class="results">
+          <li>You ✊ vs ✊... </li>
+          <li>You ✊ vs ✊... </li>
+          <li>You ✊ vs ✊.... </li>
+        </ul> -->
+      </div>
+      <div class="summary">
+        <p class="gameState">Ready Player One!</p>
+        <p class="playerInfo">Choose your Weapon</p>
+        <div class="picks">
+          <div class="computerChoice">❔</div>
+          <!-- vs -->
+          <div class="playerChoice">❔</div>
+        </div>
+        <div class="fightLine">
+          <p>Bot</p>
+          <p>vs</p>
+          <p>You</p>
+        </div>
+        <div class="tally">
+          <div class="computerScore">0</div>
+          <div class="playerScore">0</div>
+        </div>
+      </div>
+      <div class="player-options">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="card rock">✊</div>
+          <!-- <i class="far fa-hand-rock"></i> -->
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="card paper">✋</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="card scissors">✌</div>
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Copyright © 2022 faeezS</p>
+      <a href="https://github.com/faeezs" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
   </body>
 </html>
